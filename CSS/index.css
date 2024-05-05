@@ -35,10 +35,10 @@ body {
     margin-top: 10%;
   }
 
-body.popup {
+.after-clicked {
     background-color: rgba(0, 0, 0, 0.4);
 }
-  
+
 .container {
     display: flex;
 }
@@ -149,5 +149,4 @@ body.popup {
       border-radius: 15px;
       cursor: pointer;
     }
-    
     
