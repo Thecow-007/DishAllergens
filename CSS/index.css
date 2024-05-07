@@ -20,3 +20,133 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
+
+/* landing page */
+
+body {
+    font-family: "Sevillana", cursive;
+    background-color: white;
+    margin: 0;
+    margin-top: 10%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+
+.after-clicked {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container {
+    display: flex;
+}
+  
+.flex-container {
+    flex: 1;
+    padding: 20px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.flex-container img {
+    max-width: 100%; 
+    height: auto;
+}
+  
+.flex-form {
+    flex: 1;
+    padding: 20px;
+}
+  
+  h1 {
+    text-align: left;
+    color: #333;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 50px;
+  }
+  
+  h2 {
+    text-align: left;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 12px; 
+    text-align: left;
+  }
+  
+  h3 {
+    font-size: 16px;
+    padding-top: 35px;
+    font-weight: bold;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #create-account , #login-account {
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    width: 250px;
+    text-align: center;
+    border: none; 
+  }
+  
+  #create-account {
+    background-color: #f0869d;
+    color: rgb(12, 12, 12);
+    border: 2px solid rgb(12, 12, 12);
+  }
+  
+  #login-account {
+    background-color:#f0869d;
+    color: #0a0a0a;
+    border: 2px solid #f0869d;
+  }
+
+    /* Sign Up & Login*/
+    .showsup { 
+      position: absolute;
+      top: -200%; 
+      left: 50%;
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.25);
+      width: 350px;
+      padding: 20px 50px 50px;
+      background: #fff;
+      box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+    }
+    
+    .clicked { 
+      top: 50%;
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    
+    .close-button { 
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 15px;
+      height: 15px;
+      background: #888;
+      color: #eee;
+      text-align: center;
+      line-height: 15px;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+    
