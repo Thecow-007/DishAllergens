@@ -27,6 +27,11 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.remove('after-clicked');
         clearFields();
     });
+    var signupRedirect = document.getElementById('signup-redirect');
+    signupRedirect.addEventListener('click', function () {
+        signUp.classList.add('clicked');
+        signIn.classList.remove('clicked');
+    });
 
     var signupForm = document.getElementById('signup');
     signupForm.addEventListener('submit', function (event) {
@@ -34,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault(); 
         }
     });
-
 
     function clearFields() {
         var values = document.querySelectorAll('#username, #email, #pass, #pass2');

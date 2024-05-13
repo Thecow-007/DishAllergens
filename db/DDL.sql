@@ -2,6 +2,11 @@ CREATE DATABASE IF NOT EXISTS Allergy_app;
 
 USE Allergy_app;
 
+CREATE TABLE Dish_Images (
+    Dish_Image_ID INT AUTO_INCREMENT PRIMARY KEY,
+    Dish_Image LONGBLOB
+);
+
 CREATE TABLE Restaurant (
     Restaurant_ID INT AUTO_INCREMENT PRIMARY KEY,
     Restaurant_Name VARCHAR(255) NOT NULL,
@@ -31,10 +36,6 @@ CREATE TABLE Dish (
     FOREIGN KEY (Dish_Image_ID) REFERENCES Dish_Images(Dish_Image_ID)
 );
 
-CREATE TABLE Dish_Images (
-    Dish_Image_ID INT AUTO_INCREMENT PRIMARY KEY,
-    Dish_Image LONGBLOB
-);
 
 CREATE TABLE Allergens (
     Allergens_ID INT AUTO_INCREMENT PRIMARY KEY,
@@ -53,6 +54,7 @@ CREATE TABLE `User` (
     User_ID INT AUTO_INCREMENT PRIMARY KEY,
     User_Name VARCHAR(255) NOT NULL,
     User_Password VARCHAR(255) NOT NULL,
+    User_Email VARCHAR(255) NOT NULL,
     User_Address VARCHAR(255),
     User_Photo LONGBLOB
 );

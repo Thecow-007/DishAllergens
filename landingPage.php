@@ -22,8 +22,12 @@
         <div class="flex-form">
             <h1>Know Your Allergens, Dine with Confidence!</h1>
             <h2>Unlock Flavor, Sign Up for More!</h2>
-            <form action="./signup.php" method="post" id="signup">
-                <button id="create-account">Sign Up Now</button>
+            <button id="create-account">Sign Up Now</button>
+            <h3>Already have an account?</h3>
+            <button id="login-account">Login Now</button>
+
+
+            <form action="./Elements/signup.php" method="post" id="signup">
                 <!-- Signup form -->
                 <div class="signup-form">
                     <div class="showsup">
@@ -57,17 +61,15 @@
                 </div>
             </form>
 
-            <h3>Already have an account?</h3>
             <!-- SignIn form -->
-            <form action="signin.php" method="post" id="signin">
-                <button id="login-account">Login Now</button>
+            <form action="./Elements/login.php" method="POST" id="signin">
                 <div class="login-form">
                     <div class="showsup">
                         <div class="close-button" id="closeLogin">&times;</div>
                         <h2>Sign In Your Account</h2>
                         <div>
-                            <label for="email">User Name</label>
-                            <input type="username" id="login-username" name="username" placeholder="User Name" required>
+                            <label for="login-username">User Name</label>
+                            <input type="username" id="login-username" name="login-username" placeholder="User Name" required>
                         </div>
                         <div>
                             <label for="password">Password</label>
@@ -78,7 +80,7 @@
                         </div>
                         <div>
                             <!--redirect user to sign up page if they don't have an account-->
-                            <p>Don't have an account? <a href=""> Sign up</a></p>
+                            <div>Don't have an account? <span id="signup-redirect">Sign up</span></div>
                         </div>
                     </div>
                 </div>
