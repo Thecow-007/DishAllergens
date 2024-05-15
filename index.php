@@ -23,10 +23,10 @@
         <!-- View Icons -->
         <div id="view-icons-container">
             <div id="restaurant-view-container">
-                <img src="" alt="ToDo: Add view Icons" id="restaurant-view">
+                <img src="./Site_Images/Icons/house.png" alt="ToDo: Add view Icons" id="restaurant-view"class="icon">
             </div>
             <div id="dish-view-container">
-                <img src="" alt="ToDo: Add view Icons" id="dish-view">
+                <img src="./Site_Images/Icons/soup.png" alt="ToDo: Add view Icons" id="dish-view" class="icon">
             </div>
         </div>
 
@@ -37,54 +37,79 @@
 
         <!-- Your Allergens -->
         <div id="allergens-container">
-            <div class="allergen">
-                <p>Sardines</p>
+            <div id="allergens-title-container">
+                <p id="allergens-title">Allergens:</p>
             </div>
-            <div class="allergen">
-                <p>Cheese</p>
-            </div>
-            <div class="allergen">
-                <p>Pizza</p>
-            </div>
-            <div id="add-allergen-container">
-                <label for="add-allergen">Add Allergen:</label>
-                <input type="text" id="add-allergen" name="add-allergen">
+            <div id="allergens">
+                <div class="allergen">
+                    <p>Sardines</p>
+                </div>
+                <div class="allergen">
+                    <p>Cheese</p>
+                </div>
+                <div class="allergen">
+                    <p>Pizza</p>
+                </div>
             </div>
         </div>
-
-        <!-- Sort Interface -->
+        
+        <div id="add-allergen-container">
+            <label for="add-allergen">Add Allergen:</label>
+            <input type="text" id="add-allergen" name="add-allergen">
+        </div>
+        
         <div id="sort-interface">
-
-            <p id="sort-title">Sort:</p>
-            
-            <!-- Sort Buttons -->
-            <div id="sort-buttons">
-
-                <div class="sort-button">
-                    <input type="radio" id="proximity" name="sort">
-                    <label for="proximity">By Proximity</label>
-                </div>
-
-                <div class="sort-button">
-                    <input type="radio" id="alphebetical" name="sort">
-                    <label for="alphebetical">Alphebetically</label>
-                </div>
-
-                <div class="sort-button">
-                    <input type="radio" id="reverse-A" name="sort">
-                    <label for="reverse-A">Reverse Alphebetically</label>
-                </div>
-
-            <!-- ToDo: Come up with more sorts -->
-
-            </div>
-        </div>
-
-        <!-- Search Bar -->
-        <div id="search-container">
-            <input type="text" placeholder="Search..." id="search">
+            <a href="" id="sort-link">Sort Results</a>
         </div>
     </form>
+
+    <main>
+        <!-- Example Restaurant Card -->
+        <div class="restaurant-card">
+            <!-- Title -->
+            <div class="rest-title">
+                <h3>Pascalli's Pizzeria</h3>
+            </div>
+
+            <!-- Info Section -->
+            <div class="info">
+                <div class="info-title-container">
+                    <p class="info-title">Info:</p>
+                </div>
+
+                <div class="info-list-container">
+                    <ul class="info-list">
+                        <li>(613) 608-7777</li>
+                        <li>956 Pizza Lane</li>
+                        <li>PizzaPlace.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Dishes -->
+            <div class="dishes">
+                <div class="dishes-title-container">
+                    <p class="dishes-title">Dishes:</p>
+                </div>
+
+                <div class="dishes-list-container">
+                    <ul class="dishes-list">
+                        <li>Pepperoni Pizza</li>
+                        <li>Vegetable Pizza</li>
+                        <li>Wings</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="image-grid">
+                <img src="./pic/foodPics/pizza1.jpg" alt="A picture of Pizza" class="foodPic">
+                <img src="./pic/foodPics/pizza2.jpg" alt="A picture of Pizza" class="foodPic">
+                <img src="./pic/foodPics/pizza3.jpg" alt="A picture of Pizza" class="foodPic">
+                <img src="./pic/foodPics/pizza4.jpg" alt="A picture of Pizza" class="foodPic">
+            </div>
+
+        </div>
+    </main>
 
 </body>
 </html>
